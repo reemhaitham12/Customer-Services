@@ -22,7 +22,8 @@
             <div class="selectBtn py-3 justify-content-between d-flex ">
                 <button type="button" id="sort-button" class="btn btn-success"
                     onclick="sortCustomersByName()">Sort Names Customer</button>
-                <button type="button" class="btn btn-danger" id="amount-button">Sort Transaction
+                <button type="button" class="btn btn-danger"
+                    id="amount-button">Sort Transaction
                     Amount</button>
             </div>
             <table
@@ -41,18 +42,21 @@
             </table>
             <div class=" row g-4 py-3">
                 <div class="col-lg-6">
-                    <div class="card">
+                    <div class="card"> <!-- width="300" height="300"-->
                         <!-- Card content -->
+                        <canvas id="barchart" width="100px" height="100px"></canvas>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="card">
                         <!-- Card content -->
+                        <canvas id="doughnut"></canvas>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js">
     </script>
